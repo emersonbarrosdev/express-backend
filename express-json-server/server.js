@@ -12,20 +12,20 @@ await db.read();
 
 app.use(bodyParser.json());
 
-// Rota para obter todos os usuários
+// Rota para obter todos os usuários ou um usuário específico
 app.get('/usuarios', (req, res) => {
-  const usuarios = db.data.usuarios;
-  res.json(usuarios);
-});
-
-// Rota para obter um usuário específico
-app.get('/usuario', (req, res) => {
   const { identifier, userType } = req.query;
-  const usuario = db.data.usuarios.find(u => u.identifier === identifier && u.userType === userType);
-  if (usuario) {
-    res.json(usuario);
+  if (identifier && userType) {
+    // Filtrar por identifier e userType se fornecidos
+    const usuario = db.data.usuarios.find(u => u.identifier === identifier && u.userType === userType);
+    if (usuario) {
+      res.json([usuario]); // Retornar um array com o usuário encontrado
+    } else {
+      res.status(404).send('Usuário não encontrado');
+    }
   } else {
-    res.status(404).send('Usuário não encontrado');
+    // Retornar todos os usuários se não houver parâmetros
+    res.json(db.data.usuarios);
   }
 });
 
@@ -52,7 +52,7 @@ app.post('/usuarios/:identifier/positions', async (req, res) => {
   if (usuario) {
     const newPosition = {
       idPosition: nanoid(),
-      namePosition: req.body.nuevaPosicion,
+      namePosition: req.body.namePosition,
       idPaises: req.body.idPaises.map(idPais => {
         const pais = db.data.paises.find(p => p.idPais === idPais);
         return pais ? { idPais: pais.idPais, pais: pais.pais } : { idPais };
@@ -61,9 +61,15 @@ app.post('/usuarios/:identifier/positions', async (req, res) => {
         const perfil = db.data.perfiles.find(p => p.idPerfil === idPerfil);
         return perfil ? { idPerfil: perfil.idPerfil, perfil: perfil.perfil } : { idPerfil };
       }),
-      byDefault: req.body.porDefecto,
-      atributosEmpleado: req.body.atributosEmpleado,
-      atributosExterno: req.body.atributosExterno
+      byDefault: req.body.byDefault,
+      atributosEmpleado: req.body.atributosEmpleado.map(atributo => {
+        const atributoInfo = db.data.atributosEmpleado.find(a => a.idAtributoFijo === atributo.idAtributoFijo);
+        return { idAtributoFijo: atributo.idAtributoFijo, nomeAtributo: atributoInfo ? atributoInfo.nomeAtributo : '', valorAtributo: atributo.valorAtributo };
+      }),
+      atributosExterno: req.body.atributosExterno.map(atributo => {
+        const atributoInfo = db.data.atributosExterno.find(a => a.idAtributoFijo === atributo.idAtributoFijo);
+        return { idAtributoFijo: atributo.idAtributoFijo, nomeAtributo: atributoInfo ? atributoInfo.nomeAtributo : '', valorAtributo: atributo.valorAtributo };
+      })
     };
     usuario.positions.push(newPosition);
     await db.write();
@@ -92,6 +98,18 @@ app.patch('/usuarios/:identifier/positions/:positionId', async (req, res) => {
         updatedPosition.idPerfiles = updates.idPerfiles.map(idPerfil => {
           const perfil = db.data.perfiles.find(p => p.idPerfil === idPerfil);
           return perfil ? { idPerfil: perfil.idPerfil, perfil: perfil.perfil } : { idPerfil };
+        });
+      }
+      if (updates.atributosEmpleado) {
+        updatedPosition.atributosEmpleado = updates.atributosEmpleado.map(atributo => {
+          const atributoInfo = db.data.atributosEmpleado.find(a => a.idAtributoFijo === atributo.idAtributoFijo);
+          return { idAtributoFijo: atributo.idAtributoFijo, nomeAtributo: atributoInfo ? atributoInfo.nomeAtributo : '', valorAtributo: atributo.valorAtributo };
+        });
+      }
+      if (updates.atributosExterno) {
+        updatedPosition.atributosExterno = updates.atributosExterno.map(atributo => {
+          const atributoInfo = db.data.atributosExterno.find(a => a.idAtributoFijo === atributo.idAtributoFijo);
+          return { idAtributoFijo: atributo.idAtributoFijo, nomeAtributo: atributoInfo ? atributoInfo.nomeAtributo : '', valorAtributo: atributo.valorAtributo };
         });
       }
       usuario.positions[positionIndex] = updatedPosition;

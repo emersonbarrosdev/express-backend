@@ -6,45 +6,54 @@
       "fullName": "Luciano Fernandes-Test",
       "positions": [
         {
-          "idPosition": "AAcZYuTZQB1lInlQ_gOoW",
-          "namePosition": "testando Passado",
+          "idPosition": "123",
+          "namePosition": "Administrador",
           "idPaises": [
             {
-              "idPais": 2,
-              "pais": "Albania"
+              "idPais": 4,
+              "pais": "Andorra"
             },
             {
-              "idPais": 3,
-              "pais": "Algeria"
+              "idPais": 8,
+              "pais": "Australia"
             },
             {
-              "idPais": 6,
-              "pais": "Argentina"
+              "idPais": 10,
+              "pais": "Azerbaijan"
+            },
+            {
+              "idPais": 11,
+              "pais": "Bahamas"
+            },
+            {
+              "idPais": 12,
+              "pais": "Bahrain"
+            },
+            {
+              "idPais": 13,
+              "pais": "Bangladesh"
+            },
+            {
+              "idPais": 14,
+              "pais": "Barbados"
             }
           ],
           "idPerfiles": [
             {
-              "idPerfil": 2,
-              "perfil": "User"
+              "idPerfil": 1,
+              "perfil": "Admin"
             },
             {
-              "idPerfil": 4,
-              "perfil": "Editor"
-            },
-            {
-              "idPerfil": 8,
-              "perfil": "Analyst"
+              "idPerfil": 5,
+              "perfil": "Manager"
             }
           ],
           "byDefault": true,
           "atributosEmpleado": [
             {
               "idAtributoFijo": 2,
-              "valorAtributo": "Brasil"
-            },
-            {
-              "idAtributoFijo": 3,
-              "valorAtributo": "Minas Gerais"
+              "nomeAtributo": "ESTADO",
+              "valorAtributo": "São Paulo"
             }
           ],
           "atributosExterno": []
@@ -99,7 +108,8 @@
           "atributosEmpleado": [
             {
               "idAtributoFijo": 2,
-              "valorAtributo": "Brasil"
+              "nomeAtributo": "ESTADO",
+              "valorAtributo": "Minas Gerais"
             }
           ],
           "atributosExterno": []
@@ -269,6 +279,42 @@
     {
       "idPerfil": 20,
       "perfil": "Architect"
+    }
+  ],
+  "atributosEmpleado": [
+    {
+      "idAtributoFijo": 1,
+      "nomeAtributo": "IDPAIS"
+    },
+    {
+      "idAtributoFijo": 2,
+      "nomeAtributo": "ESTADO"
+    },
+    {
+      "idAtributoFijo": 3,
+      "nomeAtributo": "ISOPAIS"
+    },
+    {
+      "idAtributoFijo": 4,
+      "nomeAtributo": "NOME"
+    }
+  ],
+  "atributosExterno": [
+    {
+      "idAtributoFijo": 1,
+      "nomeAtributo": "IDENTIFICADOR"
+    },
+    {
+      "idAtributoFijo": 2,
+      "nomeAtributo": "IDPAIS"
+    },
+    {
+      "idAtributoFijo": 3,
+      "nomeAtributo": "ESTADO"
+    },
+    {
+      "idAtributoFijo": 4,
+      "nomeAtributo": "NOME"
     }
   ]
 }
