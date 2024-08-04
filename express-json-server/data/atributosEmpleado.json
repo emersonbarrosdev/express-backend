@@ -1,0 +1,21 @@
+{
+    "atributosEmpleado": [
+      {
+        "idAtributoFijo": 1,
+        "nomeAtributo": "IDPAIS"
+      },
+      {
+        "idAtributoFijo": 2,
+        "nomeAtributo": "ESTADO"
+      },
+      {
+        "idAtributoFijo": 3,
+        "nomeAtributo": "ISOPAIS"
+      },
+      {
+        "idAtributoFijo": 4,
+        "nomeAtributo": "NOME"
+      }
+    ]
+  }
+  

@@ -1,0 +1,65 @@
+{
+    "perfiles": [
+      {
+        "idPerfil": 1,
+        "perfil": "Admin"
+      },
+      {
+        "idPerfil": 2,
+        "perfil": "User"
+      },
+      {
+        "idPerfil": 3,
+        "perfil": "Viewer"
+      },
+      {
+        "idPerfil": 4,
+        "perfil": "Editor"
+      },
+      {
+        "idPerfil": 5,
+        "perfil": "Manager"
+      },
+      {
+        "idPerfil": 6,
+        "perfil": "Contributor"
+      },
+      {
+        "idPerfil": 7,
+        "perfil": "Supervisor"
+      },
+      {
+        "idPerfil": 8,
+        "perfil": "Analyst"
+      },
+      {
+        "idPerfil": 9,
+        "perfil": "Developer"
+      },
+      {
+        "idPerfil": 10,
+        "perfil": "Tester"
+      },
+      {
+        "idPerfil": 11,
+        "perfil": "Support"
+      },
+      {
+        "idPerfil": 12,
+        "perfil": "Auditor"
+      },
+      {
+        "idPerfil": 13,
+        "perfil": "Consultant"
+      },
+      {
+        "idPerfil": 14,
+        "perfil": "Operator"
+      },
+      {
+        "idPerfil": 15,
+        "perfil": "Executive"
+      }
+    ]
+  }
+  

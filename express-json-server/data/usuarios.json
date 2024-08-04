@@ -1,0 +1,17 @@
+{
+    "usuarios": [
+      {
+        "identifier": "BR00004000",
+        "userType": "E",
+        "fullName": "Luciano Fernandes-Test",
+        "positions": []
+      },
+      {
+        "identifier": "BR00002398",
+        "userType": "E",
+        "fullName": "Emerson Barros Silva",
+        "positions": []
+      }
+    ]
+  }
+  

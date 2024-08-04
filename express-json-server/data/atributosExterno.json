@@ -1,0 +1,21 @@
+{
+    "atributosExterno": [
+      {
+        "idAtributoFijo": 1,
+        "nomeAtributo": "IDENTIFICADOR"
+      },
+      {
+        "idAtributoFijo": 2,
+        "nomeAtributo": "IDPAIS"
+      },
+      {
+        "idAtributoFijo": 3,
+        "nomeAtributo": "ESTADO"
+      },
+      {
+        "idAtributoFijo": 4,
+        "nomeAtributo": "NOME"
+      }
+    ]
+  }
+  

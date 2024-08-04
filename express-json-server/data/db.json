@@ -4,117 +4,151 @@
       "identifier": "BR00004000",
       "userType": "E",
       "fullName": "Luciano Fernandes-Test",
-      "positions": [
-        {
-          "idPosition": "123",
-          "namePosition": "Administrador",
-          "idPaises": [
-            {
-              "idPais": 4,
-              "pais": "Andorra"
-            },
-            {
-              "idPais": 8,
-              "pais": "Australia"
-            },
-            {
-              "idPais": 10,
-              "pais": "Azerbaijan"
-            },
-            {
-              "idPais": 11,
-              "pais": "Bahamas"
-            },
-            {
-              "idPais": 12,
-              "pais": "Bahrain"
-            },
-            {
-              "idPais": 13,
-              "pais": "Bangladesh"
-            },
-            {
-              "idPais": 14,
-              "pais": "Barbados"
-            }
-          ],
-          "idPerfiles": [
-            {
-              "idPerfil": 1,
-              "perfil": "Admin"
-            },
-            {
-              "idPerfil": 5,
-              "perfil": "Manager"
-            }
-          ],
-          "byDefault": true,
-          "atributosEmpleado": [
-            {
-              "idAtributoFijo": 2,
-              "nomeAtributo": "ESTADO",
-              "valorAtributo": "São Paulo"
-            }
-          ],
-          "atributosExterno": []
-        }
-      ]
+      "positions": []
     },
     {
       "identifier": "BR00002398",
       "userType": "E",
       "fullName": "Emerson Barros Silva",
-      "positions": [
+      "positions": []
+    }
+  ],
+  "positions": [
+    {
+      "identifier": "BR00004000",
+      "userType": "E",
+      "idPosition": "124",
+      "namePosition": "Manager",
+      "idPaises": [
         {
-          "idPosition": "355",
-          "namePosition": "Administrador",
-          "idPaises": [
-            {
-              "idPais": 2,
-              "pais": "Albania"
-            },
-            {
-              "idPais": 3,
-              "pais": "Algeria"
-            },
-            {
-              "idPais": 7,
-              "pais": "Armenia"
-            },
-            {
-              "idPais": 9,
-              "pais": "Austria"
-            }
-          ],
-          "idPerfiles": [
-            {
-              "idPerfil": 3,
-              "perfil": "Viewer"
-            },
-            {
-              "idPerfil": 5,
-              "perfil": "Manager"
-            },
-            {
-              "idPerfil": 6,
-              "perfil": "Contributor"
-            },
-            {
-              "idPerfil": 8,
-              "perfil": "Analyst"
-            }
-          ],
-          "byDefault": true,
-          "atributosEmpleado": [
-            {
-              "idAtributoFijo": 2,
-              "nomeAtributo": "ESTADO",
-              "valorAtributo": "Minas Gerais"
-            }
-          ],
-          "atributosExterno": []
+          "idPais": 11,
+          "pais": "Bahamas"
         }
-      ]
+      ],
+      "idPerfiles": [
+        {
+          "idPerfil": 5,
+          "perfil": "Manager"
+        }
+      ],
+      "byDefault": true,
+      "atributosEmpleado": [
+        {
+          "idAtributoFijo": 2,
+          "nomeAtributo": "Brasil",
+          "valorAtributo": "Brasil"
+        },
+        {
+          "idAtributoFijo": 3,
+          "nomeAtributo": "ESTADO",
+          "valorAtributo": "Minas Gerais"
+        },
+        {
+          "idAtributoFijo": 4,
+          "nomeAtributo": "CIDADE",
+          "valorAtributo": "São Paulo"
+        }
+      ],
+      "atributosExterno": []
+    },
+    {
+      "identifier": "BR00002398",
+      "userType": "E",
+      "idPosition": "355",
+      "namePosition": "Administrador",
+      "idPaises": [
+        {
+          "idPais": 2,
+          "pais": "Albania"
+        },
+        {
+          "idPais": 3,
+          "pais": "Algeria"
+        },
+        {
+          "idPais": 7,
+          "pais": "Armenia"
+        },
+        {
+          "idPais": 9,
+          "pais": "Austria"
+        }
+      ],
+      "idPerfiles": [
+        {
+          "idPerfil": 3,
+          "perfil": "Viewer"
+        },
+        {
+          "idPerfil": 5,
+          "perfil": "Manager"
+        },
+        {
+          "idPerfil": 6,
+          "perfil": "Contributor"
+        },
+        {
+          "idPerfil": 8,
+          "perfil": "Analyst"
+        }
+      ],
+      "byDefault": true,
+      "atributosEmpleado": [
+        {
+          "idAtributoFijo": 2,
+          "nomeAtributo": "ESTADO",
+          "valorAtributo": "Minas Gerais"
+        }
+      ],
+      "atributosExterno": []
+    },
+    {
+      "identifier": "BR00004000",
+      "userType": "E",
+      "idPosition": "AZ5ffpZVB5xoAISIjUGS4",
+      "namePosition": "Novo Administrador",
+      "idPaises": [
+        {
+          "idPais": 2,
+          "pais": "Albania"
+        },
+        {
+          "idPais": 4,
+          "pais": "Andorra"
+        },
+        {
+          "idPais": 6,
+          "pais": "Argentina"
+        }
+      ],
+      "idPerfiles": [
+        {
+          "idPerfil": 3,
+          "perfil": "Viewer"
+        },
+        {
+          "idPerfil": 4,
+          "perfil": "Editor"
+        },
+        {
+          "idPerfil": 5,
+          "perfil": "Manager"
+        }
+      ],
+      "byDefault": true,
+      "atributosEmpleado": [
+        {
+          "idAtributoFijo": 2,
+          "nomeAtributo": "ESTADO",
+          "valorAtributo": "Brasil"
+        },
+        {
+          "idAtributoFijo": 3,
+          "nomeAtributo": "ISOPAIS",
+          "valorAtributo": "São Paulo"
+        }
+      ],
+      "atributosExterno": []
     }
   ],
   "paises": [
@@ -259,26 +293,6 @@
     {
       "idPerfil": 15,
       "perfil": "Executive"
-    },
-    {
-      "idPerfil": 16,
-      "perfil": "Coordinator"
-    },
-    {
-      "idPerfil": 17,
-      "perfil": "Specialist"
-    },
-    {
-      "idPerfil": 18,
-      "perfil": "Advisor"
-    },
-    {
-      "idPerfil": 19,
-      "perfil": "Director"
-    },
-    {
-      "idPerfil": 20,
-      "perfil": "Architect"
     }
   ],
   "atributosEmpleado": [
